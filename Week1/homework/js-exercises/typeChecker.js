@@ -6,7 +6,7 @@ let str2 = 'Train';
 let obj1 = { firstName: 'John', lastName: 'Doe' };
 let obj2 = { type: 'Toyota', model: '500' };
 
-// check if data type is the same
+// check if data type is the same and log the result
 
 if (typeof str1 == typeof str2) {
   console.log('same type');

@@ -1,37 +1,25 @@
 'use strict';
-// /* The code in this file will add the elements from the array "drinkTypes" to the array "drinkTray",
-// each element will be repeated twice.
-// when the "drinkTray.length = 6" the loop will stop "break" */
-
-// const drinkTray = [];
-// const drinkTypes = ['cola', 'lemonade', 'water'];
 
 const drinkTray = [];
 const drinkTypes = ['cola', 'lemonade', 'water'];
-for (i = 0; i < 5; i++) {
-  const drinkTray = drinkTypes.push(i);
-  console.log(drinkTray);
+// switch statement will help us to determine what happens in every iteration
+for (let i = 0; i < 5; i++) {
+  switch (i) {
+    case 0:
+    case 1:
+      drinkTray[i] = drinkTypes[0]; // the 2 cases will push the same element twice
+      break;
+
+    case 2:
+    case 3:
+      drinkTray[i] = drinkTypes[1]; // the 2 cases will push the same element twice
+      break;
+
+    case 4:
+      drinkTray[i] = drinkTypes[2]; // 1 case will result in to only 1 element being pushed
+  }
 }
 
-// for (let i = 0; i < 5; i++) {
-//   let index;
-//   if (drinkTray.length <= 1) {
-//     index = 0;
-//     drinkTray.push(drinkTypes[index]);
-//   } else if (drinkTray.length >= 2 && drinkTray.length <= 3) {
-//     index = 1;
-//     drinkTray.push(drinkTypes[index]);
-//   } else if (drinkTray.length >= 4 && drinkTray.length <= 5) {
-//     index = 2;
-//     drinkTray.push(drinkTypes[index]);
-//   } else {
-//     break;
-//   }
-// }
-// console.log(drinkTray);
+console.log(`Hey guys I brought ${drinkTray}`);
 
-// // let drinks = '';
-// // for (const drink of drinkTray) {
-// //   drink === 'water' ? (drinks += `${drink}`) : (drinks += `${drink}, `);
-// // }
-// // console.log(`Hey guys, I brought a ${drinks}!`);
+// node orderDrink.js

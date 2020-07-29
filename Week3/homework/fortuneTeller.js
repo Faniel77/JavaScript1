@@ -27,5 +27,3 @@ function tellFortune(children, partner, location, job) {
 tellFortune(numChildren, partnerNames, locations, jobs);
 tellFortune(numChildren, partnerNames, locations, jobs);
 tellFortune(numChildren, partnerNames, locations, jobs);
-
-// node fortuneTeller.js

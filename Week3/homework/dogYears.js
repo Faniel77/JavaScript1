@@ -7,5 +7,3 @@ function calculateDogAge(puppyAge) {
 calculateDogAge(1);
 calculateDogAge(2);
 calculateDogAge(3);
-
-// node dogYears.js
